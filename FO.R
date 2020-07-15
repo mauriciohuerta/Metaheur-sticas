@@ -1,3 +1,24 @@
+############################################################################
+############################################################################
+##############                                               ###############
+##############                      FO                       ###############
+##############   Funcion para calcular la funcion objetivo   ###############
+##############                                               ###############
+############################################################################
+############################################################################
+###                                                                      ###
+### Inputs:                                                              ###
+###                                                                      ###
+############################################################################
+### cromosoma : Vector de enteros. Representacion de la solucion como    ###
+###             un cromosoma.                                            ###
+### pi        : Numerico. Especifica la proporcion de demanda minima que ###
+###             se desea capturar. Debe estar entre 0 y 1.               ###
+### params    : Objeto de clase EII868. Lista que contiene los           ###
+###             valores de lso parametros.                               ###
+############################################################################
+############################################################################
+
 FO <- function(cromosoma, pi, params){
   if(class(params)!="EII868"){
     stop("La clase del objeto params es diferente a EII868")
